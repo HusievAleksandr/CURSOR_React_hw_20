@@ -1,6 +1,7 @@
 import React ,{useRef}from 'react';
 import { Link } from 'react-router-dom';
 import './style/Nav.css'
+import { appRotes } from '../routes/Routes';
 
 
 
@@ -66,18 +67,18 @@ const Nav = props => {
                     </div>
                     <nav className="menu_body">
                         <ul className="menu_list">
-                            <li><Link className ="menu_sub-link" to="/">Home </Link></li>
-                            <li><Link className ="menu_sub-link" to="/puplications">Puplications</Link></li>
-                            <li><Link className ="menu_sub-link" to="/photo">Photo</Link></li>
-                            <li><Link className ="menu_sub-link" to="/contacts">Contacts</Link></li>
+                            <li><Link className ="menu_sub-link" to={appRotes.home.path}>Home </Link></li>
+                            <li><Link className ="menu_sub-link" to={appRotes.puplications.path}>Puplications</Link></li>
+                            <li><Link className ="menu_sub-link" to={appRotes.photo.path}>Photo</Link></li>
+                            <li><Link className ="menu_sub-link" to={appRotes.contacts.path}>Contacts</Link></li>
                             <li>
                                 <Link className ="menu_sub-link" to="/">Pages </Link>
                                 <span onClick={onClickArrow } ref={menuArrow} className="menu_arrow"></span>
                                 <ul className="menu_sub-list">
-                                    <li><Link className ="menu_sub-link" to="/">Home </Link></li>
-                                    <li><Link className ="menu_sub-link" to="/puplications">Puplications</Link></li>
-                                    <li><Link className ="menu_sub-link" to="/photo">Photo</Link></li>
-                                    <li><Link className ="menu_sub-link" to="/contacts">Contacts</Link></li>
+                                    <li><Link className ="menu_sub-link" to={appRotes.home.path}>Home </Link></li>
+                                    <li><Link className ="menu_sub-link" to={appRotes.puplications.path}>Puplications</Link></li>
+                                    <li><Link className ="menu_sub-link" to={appRotes.photo.path}>Photo</Link></li>
+                                    <li><Link className ="menu_sub-link" to={appRotes.contacts.path}>Contacts</Link></li>
                                 </ul>
                             </li>
                         </ul>

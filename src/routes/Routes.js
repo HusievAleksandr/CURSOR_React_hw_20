@@ -6,16 +6,40 @@ import SideOfPublicationsPage from '../pages/SideOfPublications.page';
 import PhotoSidePage from '../pages/PhotoSide.page';
 import SideWithContactsPage from '../pages/SideWithContacts.page';
 
+export const appRotes ={
+        home:{
+          id:1,
+          path:"/",
+          element:<HomePage />
+        } ,
+
+        puplications:{
+            id:2,
+            path:"/puplications",
+            element:<SideOfPublicationsPage />
+          } ,
+          
+          photo:{
+            id:3,
+            path:"/photo",
+            element:<PhotoSidePage />
+          } ,
+
+          contacts:{
+            id:4,
+            path:"/contacts",
+            element:<SideWithContactsPage />
+          } 
+};
+
 
 const Routes = props => {
     return (
         <div>
             <Nav />
             <ReactRouterRouts>
-                <Route path="/" element={<HomePage />}/>
-                <Route path="/puplications" element={<SideOfPublicationsPage />}/>
-                <Route path="/photo" element={<PhotoSidePage />}/>
-                <Route path="/contacts" element={<SideWithContactsPage />}/>
+                {Object.values(appRotes).map(({id, path, element})=>(
+                <Route key={id} path={path} element={element} />))  }                
             </ReactRouterRouts>
         </div>
     );
