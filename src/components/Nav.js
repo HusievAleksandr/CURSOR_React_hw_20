@@ -43,10 +43,11 @@ const Nav = props => {
 
     // Меню бургер
     
-    const iconMenu =document.querySelector('.menu_icon');
-    const menuBody =document.querySelector('.menu_body');
+    
     const menuIkon =  useRef();
     const onClickIkon  = ()=>{
+        const iconMenu =document.querySelector('.menu_icon');
+        const menuBody =document.querySelector('.menu_body');
             document.body.classList.toggle('_lock');
             iconMenu.classList.toggle('_active');
             menuBody.classList.toggle('_active');
