@@ -9,25 +9,25 @@ import SideWithContactsPage from '../pages/SideWithContacts.page';
 export const appRotes ={
         home:{
           id:1,
-          path:"/",
+          path:"/CURSOR_React_hw_20/",
           element:<HomePage />
         } ,
 
         puplications:{
             id:2,
-            path:"/puplications",
+            path:"/CURSOR_React_hw_20//puplications",
             element:<SideOfPublicationsPage />
           } ,
           
           photo:{
             id:3,
-            path:"/photo",
+            path:"/CURSOR_React_hw_20/photo",
             element:<PhotoSidePage />
           } ,
 
           contacts:{
             id:4,
-            path:"/contacts",
+            path:"/CURSOR_React_hw_20/contacts",
             element:<SideWithContactsPage />
           } 
 };
