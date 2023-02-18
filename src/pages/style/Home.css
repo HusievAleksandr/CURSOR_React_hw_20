@@ -1,0 +1,59 @@
+.page {
+    padding: 90px 0px 30px 0px;     
+}
+.page_section {
+    position: relative; 
+    text-align: center;
+    padding: 30px;
+    max-width: 1200px;  
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+
+.page_section_1 img{
+    width: 100%;
+    height: 30%; 
+    
+}
+ 
+.show_1 {
+    animation: show_1 3s ease;
+}
+.show_2 {
+    animation: show_2 3s ease;
+}
+.show_3 {
+    animation: show_3 3s ease;
+}
+.show_4 {
+    animation: show_4 3s ease;
+}
+
+
+
+@keyframes show_1 {
+    0%   { opacity: 0; margin-left: -150%;}
+    50%  {opacity: 0,75; margin-left: 10%;}
+    100% { opacity: 1; margin-left: 0%;}
+  }
+
+
+@keyframes show_2 {
+    0%   {width: 0%; height: 0%; margin-top: 200px;}
+    50%  {width: 50%; height: 15%; margin-top: 100px;}
+    100% {width: 100%; height: 30%; margin-top: 0px;}
+  }
+@keyframes show_3 {
+    0%   {opacity: 0; width: 100%; height: 0%;margin-top: -500px;}
+    50%  {opacity: 1; width: 80%; height: 15%; margin-top: 25px;}
+    100% {opacity: 1;width: 100%; height: 30%;margin-top: 0px;}
+  }
+@keyframes show_4 {
+    0%   {width: 0%; height: 0%; margin-top: 200px;border-radius: 100%;margin-right: -150%;}
+    25%  {width: 25%; height: 5%; margin-top: 75px;border-radius: 100%;margin-right: 0%;}
+    50%  {width: 20%; height: 10%; margin-top: 150px;border-radius: 75%;margin-right: 0%;}
+    75%  {width: 30%; height: 20%; margin-top: 50px;border-radius: 50%;margin-right: 0%;}
+    100% {width: 100%; height: 30%; margin-top: 0px;border-radius: 0%;margin-right: 0%;}
+  }
+  
