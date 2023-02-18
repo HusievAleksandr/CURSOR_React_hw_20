@@ -38,6 +38,7 @@ const Routes = props => {
         <div>
             <Nav />
             <ReactRouterRouts>
+                <Route index element={<HomePage/>} />
                 {Object.values(appRotes).map(({id, path, element})=>(
                 <Route key={id} path={path} element={element} />))  }                
             </ReactRouterRouts>
